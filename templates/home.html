@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1> {{ header }} </h1>
+    <p>{{ message }}</p>
+
+
+    <h2>Popular Visualizations</h2>
+    <ul>
+        {% for viz in Visualizations %}
+            <li>{{ viz }}</li>
+        {% endfor %}
+
+    </ul>
+
+{% endblock %}
+
